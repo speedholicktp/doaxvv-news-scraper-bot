@@ -10,7 +10,7 @@
 #   check ... Force check now
 #
 # Notes:
-#   Runs every 10 minites
+#   Runs periodically. The interval is determined by JSON.
 #
 # Author:
 #    ktp <unofficial.doaxvv.bot@gmail.com>

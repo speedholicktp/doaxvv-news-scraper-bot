@@ -1,5 +1,5 @@
 {
-  "cron_time":"0 */1 * * * *",
+  "cron_time":"0 */10 * * * *",
   "pages": [
     {
       "name": "News",
