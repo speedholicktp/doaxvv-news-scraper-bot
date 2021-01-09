@@ -1,5 +1,5 @@
 {
-  "cron_time":"0 */5 * * * *",
+  "cron_time":"0 */1 * * * *",
   "pages": [
     {
       "name": "News",
@@ -9,6 +9,5 @@
       "name": "Updates",
       "url": "https://doax-venusvacation.jp/update_list.html"
     }
-  ], 
-  "webhook": "https://discord.com/api/webhooks/xxx/yyy"
+  ]
 }

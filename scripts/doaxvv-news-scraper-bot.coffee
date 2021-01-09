@@ -4,6 +4,7 @@
 # Configuration:
 #   HUBOT_DISCORD_TOKEN
 #   HUBOT_DISCORD_STATUS_MSG
+#   HUBOT_DISCORD_WEBHOOK_URL
 #
 # Commands:
 #   check ... Force check now
@@ -19,6 +20,10 @@ crypto = require 'crypto'
 client = require 'cheerio-httpcli'
 request = require 'request'
 cronJob = require('cron').CronJob
+
+# Get env vars.
+config =
+  webhookUrl: process.env.HUBOT_DISCORD_WEBHOOK_URL
 
 module.exports = (robot) ->
   #
@@ -59,7 +64,7 @@ module.exports = (robot) ->
     data = JSON.stringify({
       content: title + "の更新: " + url
     })
-    robot.http(json.webhook)
+    robot.http(config.webhookUrl)
       .header('Content-Type', 'application/json')
        .post(data) (err, res, body) ->
        #
