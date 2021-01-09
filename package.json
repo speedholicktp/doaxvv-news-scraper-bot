@@ -1,6 +1,6 @@
 {
   "name": "doaxvv-news-scraper-bot",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": "ktp <unofficial.doaxvv.bot@gmail.com>",
   "description": "A DOAXVV official site scraper for Discord.",
