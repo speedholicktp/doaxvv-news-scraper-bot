@@ -9,8 +9,12 @@
 #   (Heroku only)  HUBOT_HEROKU_KEEPALIVE_INTERVAL
 #   (Heroku only)  HUBOT_HEROKU_WAKEUP_TIME
 #   (Heroku only)  HUBOT_HEROKU_SLEEP_TIME
+#   (Heroku only)  heroku config:add TZ='YOUR_TIME_ZONE'
+#                  HUBOT_HEROKU_WAKEUP_TIME and HUBOT_HEROKU_SLEEP_TIME depend on TZ value.
+#                  The default TZ value is UTC(GMT+0:00). 
 #   (Heroku only)  Heroku scheduler to execute the following for waking up BOT:
 #                    curl ${HUBOT_HEROKU_KEEPALIVE_URL}heroku/keepalive
+#
 # Commands:
 #   check ... Force check now
 #
