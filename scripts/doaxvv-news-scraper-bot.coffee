@@ -67,7 +67,7 @@ module.exports = (robot) ->
 
   sendToDiscord = (title, url) ->
     data = JSON.stringify({
-      content: title + "の更新: " + url
+      content: title + "が更新されたみたい: " + url
     })
     robot.http(config.webhookUrl)
       .header('Content-Type', 'application/json')
