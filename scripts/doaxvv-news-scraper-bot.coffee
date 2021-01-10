@@ -5,12 +5,17 @@
 #   HUBOT_DISCORD_TOKEN
 #   HUBOT_DISCORD_STATUS_MSG
 #   HUBOT_DISCORD_WEBHOOK_URL
-#
+#   (Heroku only)  HUBOT_HEROKU_KEEPALIVE_URL
+#   (Heroku only)  HUBOT_HEROKU_KEEPALIVE_INTERVAL
+#   (Heroku only)  HUBOT_HEROKU_WAKEUP_TIME
+#   (Heroku only)  HUBOT_HEROKU_SLEEP_TIME
+#   (Heroku only)  Heroku scheduler to execute the following for waking up BOT:
+#                    curl ${HUBOT_HEROKU_KEEPALIVE_URL}heroku/keepalive
 # Commands:
 #   check ... Force check now
 #
 # Notes:
-#   Runs periodically. The interval is determined by JSON.
+#   Runs periodically. The interval is determined by .doaxvv-news-scraper-bot.json.
 #
 # Author:
 #    ktp <unofficial.doaxvv.bot@gmail.com>
